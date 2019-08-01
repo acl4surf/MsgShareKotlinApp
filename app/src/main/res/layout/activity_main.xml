@@ -33,5 +33,14 @@
             android:layout_centerInParent="true"
             android:text="Send data to next activity"
     />
+    <Button
+            android:id="@+id/btnShareToOtherApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="167dp"
+            android:text="Share to other apps"
+    />
 
 </RelativeLayout>
