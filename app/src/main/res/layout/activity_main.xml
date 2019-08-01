@@ -7,5 +7,13 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <Button
+            android:id="@+id/btnShowToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:text="Show Toast" />
 
 </RelativeLayout>
