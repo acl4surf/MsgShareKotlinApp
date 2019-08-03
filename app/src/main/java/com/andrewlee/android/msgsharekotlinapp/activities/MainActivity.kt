@@ -1,10 +1,11 @@
-package com.andrewlee.android.msgsharekotlinapp
+package com.andrewlee.android.msgsharekotlinapp.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.andrewlee.android.msgsharekotlinapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             // Lambda statement
             val message = etUserMessage.text.toString()
             Log.i("MainActivity", "Button was clicked!")
+
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
         }
 
@@ -35,6 +37,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
             startActivity(Intent.createChooser(intent, "Please select app: "))
+        }
+
+        btnHobbiesActivity.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
         }
     }
 }

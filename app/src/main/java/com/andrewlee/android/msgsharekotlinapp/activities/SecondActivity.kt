@@ -1,7 +1,8 @@
-package com.andrewlee.android.msgsharekotlinapp
+package com.andrewlee.android.msgsharekotlinapp.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.andrewlee.android.msgsharekotlinapp.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
